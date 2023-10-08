@@ -1,0 +1,74 @@
+body{
+    font-family: 'Montserrat', sans-serif;
+}
+
+.container {
+    display: flex;
+}
+
+.left-column {
+    width: 400px;
+    padding: 20px 0;
+    background-color: #1e2939;
+    color: white;
+}
+
+.right-column {
+    flex: 1;
+    padding: 50px 200px 50px 50px;
+    background-color: white;
+}
+
+/*PANEL IZQUIERDO*/
+
+.fotografia {
+    width: 100%;
+}
+
+.titulos {
+    font-weight: 900;
+}
+
+.subtitulos {
+    font-weight: 700;
+}
+
+.informacion-basica{
+    padding: 30px;
+}
+
+.informacion-basica .contacto{
+    padding: 15px 0;
+}
+
+.informacion-basica  ul li::marker,
+.right-column ol li::marker {
+    font-weight: 700;
+    color: orangered;
+}
+
+.informacion-basica  ul li,
+.right-column ol li {
+    padding: 5px;
+}
+
+/*PANEL DERECHO*/
+.perfil, .proyectos, .estudios, .educacion {
+    padding: 15px 0;
+}
+
+.institucion {
+    color: #fb6d3a;
+}
+
+.fecha-curso{
+    margin: 0;
+}
+
+.proyectos .titulos,
+.estudios .titulos,
+.educacion .titulos {
+    font-size: 25px;
+    margin: 0;
+    padding: 0;
+}
