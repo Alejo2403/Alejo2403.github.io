@@ -1,0 +1,17 @@
+/**/
+@keyframes typing {
+    from {
+        width: 0; /* Inicialmente, el ancho es 0 */
+    }
+    to {
+        width: 100%; /* Al final, el ancho es 100% */
+    }
+}
+
+.typing-text{
+    overflow: hidden; /* Oculta el exceso de texto */
+    white-space: nowrap; /* Evita el salto de línea */
+    animation: typing 3s steps(40) forwards; /* Duración de la animación y pasos */
+}
+
+
