@@ -317,3 +317,37 @@ header{
         max-width: 100%; /* Ancho completo en pantallas pequeñas */
     }
 }
+
+/*QUESTIONARIO*/
+form {
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+form p {
+    padding: 20px 0;
+}
+
+input[type="radio"] {
+    margin-left: 10px;
+}
+
+#resultado {
+    font-weight: bold;
+    margin-top: 20px;
+    color: black;
+}
+
+form input {
+    color: black;
+    font-weight: 900;
+    margin: 10px;
+    padding: 5px;
+    border-radius: 10px;
+}
+
+#resultado {
+    color: white;
+    font-weight: 900;
+}

@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Questionario</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;700;900&family=Roboto+Mono:wght@200;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/estilos.css">
+
+</head>
+
+<body>
+    <div class="fondo">
+        <header class="header-secundario">
+            <a href="/index.html"><img class="logo" src="/img/logo-01.png" alt="logotipo"/></a>
+        </header>
+
+        <div class="contenido">
+
+            <section class="sobre-mi">
+                <div class="contenedor">
+                    <div class="navegacion-fake">
+                        <p class="boton-r no-interactivo"></p>
+                        <p class="boton-a no-interactivo"></p>
+                        <p class="boton-v no-interactivo"></p>
+                    </div>
+                    <h1 class="titulo  typing-text">&lt;<span class="etiqueta">h1</span>&gt;Questionario Desarrollo Web&lt;/<span class="etiqueta">h1</span>&gt;</h1>
+
+                    <form id="quizForm">
+                        <p>Pregunta 1: ¿Qué significa HTML?</p>
+                        <input type="radio" name="q1" value="a"> a) Hyper Transfer Markup Language<br>
+                        <input type="radio" name="q1" value="b"> b) Hyper Text Markup Language<br>
+                        <input type="radio" name="q1" value="c"> c) High Tech Multi-Language<br>
+                        <input type="radio" name="q1" value="d"> d) Hyperlink and Text Markup Language<br>
+                
+                        <p>Pregunta 2: ¿Cuál de las siguientes etiquetas se utiliza para crear una lista desordenada en HTML?</p>
+                        <input type="radio" name="q2" value="a"> a) ul<br>
+                        <input type="radio" name="q2" value="b"> b) ol<br>
+                        <input type="radio" name="q2" value="c"> c) li<br>
+                        <input type="radio" name="q2" value="d"> d) dl<br>
+                
+                        <p>Pregunta 3: ¿cómo se selecciona un elemento HTML con un id específico?</p>
+                        <input type="radio" name="q3" value="a"> a) Utilizando el selector de clase (.clase)<br>
+                        <input type="radio" name="q3" value="b"> b) Utilizando el selector de elemento (element)<br>
+                        <input type="radio" name="q3" value="c"> c) Utilizando el selector de atributo ([atributo])<br>
+                        <input type="radio" name="q3" value="d"> d) Utilizando el selector de id (#id)<br>
+
+                        <p>Pregunta 4: ¿Cuál de las siguientes propiedades CSS se utiliza para cambiar el color de fondo de un elemento?</p>
+                        <input type="radio" name="q4" value="a"> a) color<br>
+                        <input type="radio" name="q4" value="b"> b) background-color<br>
+                        <input type="radio" name="q4" value="c"> c) font-color<br>
+                        <input type="radio" name="q4" value="d"> d) text-color<br>
+
+                        <p>Pregunta 5: ¿Cuál de las siguientes etiquetas se utiliza para crear una lista desordenada en HTML?</p>
+                        <input type="radio" name="q5" value="a"> a) /* Este es un comentario */<br>
+                        <input type="radio" name="q5" value="b"> b) // Este es un comentario<br>
+                        <input type="radio" name="q5" value="c"> c) *Este es un comentario*<br>
+                        <input type="radio" name="q5" value="d"> d) # Este es un comentario<br>
+
+                        <p>Pregunta 6: ¿Cómo se declara una variable en JavaScript?</p>
+                        <input type="radio" name="q6" value="a"> a) var myVariable;<br>
+                        <input type="radio" name="q6" value="b"> b) variable myVariable;<br>
+                        <input type="radio" name="q6" value="c"> c) myVariable = var;<br>
+                        <input type="radio" name="q6" value="d"> d) myVariable();<br>
+
+                        <p>Pregunta 7: ¿Cuál es el operador de igualdad estricta en JavaScript?</p>
+                        <input type="radio" name="q7" value="a"> a) ==<br>
+                        <input type="radio" name="q7" value="b"> b) ===<br>
+                        <input type="radio" name="q7" value="c"> c) =<br>
+                        <input type="radio" name="q7" value="d"> d) !=<br>
+
+                        <p>Pregunta 8: ¿Cuál es la función de JavaScript para agregar un elemento al final de un array?</p>
+                        <input type="radio" name="q8" value="a"> a) addEnd()<br>
+                        <input type="radio" name="q8" value="b"> b) push()<br>
+                        <input type="radio" name="q8" value="c"> c) append()<br>
+                        <input type="radio" name="q8" value="d"> d) insert()<br>
+
+                        <p>Pregunta 9: ¿Qué evento se dispara cuando un usuario hace clic en un elemento HTML?</p>
+                        <input type="radio" name="q9" value="a"> a) hover<br>
+                        <input type="radio" name="q9" value="b"> b) mouseover<br>
+                        <input type="radio" name="q9" value="c"> c) click<br>
+                        <input type="radio" name="q9" value="d"> d) keydown<br>
+
+                        <input type="button" value="Verificar Respuestas" onclick="verificarRespuestas()">
+                    </form>
+
+                    <div id="resultado"></div>
+                    
+                </div>  
+            </section>
+        </div>
+        
+    </div>
+
+    <script src="/funcionamiento/questionario.js"></script>
+
+</body>
+
+</html>
