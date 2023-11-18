@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CriptoCoins</title>
+
+    <link rel="stylesheet" href="/styles.css">
+    <link rel="stylesheet" href="/normalize.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dela+Gothic+One&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+    
+    <header class="logo">
+            <img src="/img/logo.png" alt="Logo-CriptoCoins">
+    </header>
+
+    <section class="consulta">
+        <div class="datos-coin">
+            <h1 class="titulo">Consulta en tiempo real tus Coins</h1>
+            <form class="formulario-coins" id="formulario-coins">
+                
+                <label class="coinSeleccion">Escoge tu coin</label>
+                <select id="criptomoneda"
+                        name="criptomoneda"
+                >
+                    <option value="" disabled selected>Coin</option>
+                </select>
+                
+                <label for="divisaSeleccion">Escoge tu Divisa</label>
+                <select id="divisa" name="divisa">
+                    <option value="" disabled selected>Divisa</option>
+                    <option value="USD">Dolares Americanos</option>
+                    <option value="COP">Pesos Colombianos</option>
+                    <option value="MXN">Pesos Mexicanos</option>
+                    <option value="EUR">Euros</option>
+                </select>
+                <input class="button" type="submit" value="Cotizar" />
+            </form>
+        </div>
+        <div class="resultado-coin" id="resultado-coins">
+            <h1 class="titulo">Resultados</h1>
+        </div>
+        
+    </section>
+
+    <section class="calculadora-coins">
+        <h2 class="titulo">Calcula cuanto valen tus coins en total</h2>
+            <div class="cantidad-coins">
+                <label for="resultado-cantidad">Cantidad</label>
+                <input type="number" class="cantidad-coins" id="cantidad" name="cantidad" min="0" step="1" placeholder="Ingresa cantidad">
+            </div>
+    </section>
+
+    <script src="/app.js"></script>
+
+</body>
+
+</html>
